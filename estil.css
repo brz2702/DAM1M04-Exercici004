@@ -1,6 +1,17 @@
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    font-family: "Plus Jakarta Sans", ui-sans-serif;
+}
+
 nav {
     position: sticky;
+    width: 100%;
     justify-content: center;
+    align-items: center;
     display: flex;
     height: 66px;
     top: 0;
@@ -17,20 +28,29 @@ nav {
     height: 66px;
     margin: 0 42px;
     padding: 0 32px;
-    width: 62%;
+    width: 62.5%;
     align-items: center;
     gap: 28px;
 }
 
 .nav-links {
-    font-size: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 14px;
     gap: 28px;
 }
 
+.nav-links > a {
+    color: #6e7480;
+}
+
+.nav-links > a:hover {
+    color: black;
+}
+
 .nav-button_and_span {
+    font-family: "Plus Jakarta Sans", ui-sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,17 +67,13 @@ nav {
 }
 
 .demo {
+    font-family: "Plus Jakarta Sans", ui-sans-serif;
     color: white;
     background-color: black;
     border: 1px solid black;
     font-size: 15px;
     padding: 12px 18px;
     border-radius: 20px;
-}
-
-body {
-    margin: 0;
-    font-family: 'Plus Jakarta Sans', ui-sans-serif;
 }
 
 .hero {
@@ -68,6 +84,7 @@ body {
 .hero-div {
     margin: 0 42px;
     padding: 0 32px;
+    max-width: 820px;
 }
 
 .hero-title {
@@ -80,4 +97,45 @@ body {
     color: gray;
     font-size: 21px;
     margin: 0 0 40px;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    justify-content: center;
+    display: flex;
+    height: 122px;
+    color: #9a9ca1;
+    background-color: black;
+    align-items: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    height: 122px;
+    width: 62.5%;
+    font-size: 13px;
+    align-items: center;
+    gap: 28px;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+    gap: 28px;
+}
+
+.footer-links > a {
+    color: #9a9ca1;
+}
+
+.footer-links > a:hover {
+    color: white;
+}
+
+.footer-container > img {
+    filter: invert(100%);
 }
