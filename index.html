@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <link rel="stylesheet" href="estil.css">
         <meta charset="UTF-8">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-        <title>Principal</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Strata — Exercici004</title>
+        <link rel="icon" href="assets/img/strata-icon.svg" type="image/svg+xml">
+        <link rel="stylesheet" href="assets/fonts/fonts.css">
+        <link rel="stylesheet" href="estils.css">
+        <script defer src="assets/js/vendor/three.min.js"></script>
+        <script defer src="assets/js/vendor/3d-force-graph.min.js"></script>
+        <script defer src="assets/js/hero-graph.js"></script>
     </head>
     <body>
         <nav>
-            <div class="nav-container">
-                <a href="#hero">
-                    <img src="Imatges/strata-logo.svg" width="104">
+            <div class="nav-container" aria-hidden="true">
+                <a href="#">
+                    <img src="assets/img/strata-logo.svg" width="104">
                 </a>
                 <div class="nav-links">
                     <a href="#platform">Platform</a>
@@ -26,10 +29,11 @@
             </div>
         </nav>
 
-        <section id="hero">
-            <div class=""hero-div>
+        <section class="hero">
+            <div class="glow"></div>
+            <div class="container">
                 <div>
-                    <img src="Imatges/strata-icon.svg" width="56">
+                    <img src="assets/img/strata-icon.svg" width="56">
                     <h1 class="hero-title">The work your firm<br>doesn't bill for, <span class="done">done</span>.</h1>
                     <p class="hero-text">AI agents that run the operational work your firm doesn't bill for. We turn it into<br>recovered revenue and reclaimed capacity.</p>
                     <div class="demo_platform">
@@ -38,7 +42,7 @@
                     </div>
                 </div>
                 <div class="screenshot">
-                    <img src = "Imatges/nexus-screenshot.webp">
+                    <img src = "assets/img/nexus-screenshot.webp">
                 </div>
             </div>
         </section>
@@ -70,8 +74,8 @@
         
         <section id="workflows">
             <div>
-                <p>Every workflow we run is a <span>named automation</span> with an owner and binary acceptance criteria.</p>
-                <p>We don’t lead with the AI. We lead with the numbers it moves.</p>
+                <p class="workflows1">Every workflow we run is a <span>named automation</span><br>with an owner and binary acceptance criteria.</p>
+                <p class="workflows2">We don’t lead with the AI. We lead with the numbers it moves.</p>
             </div>
         </section>
         
@@ -95,7 +99,7 @@
         
         <footer>
             <div class="footer-container">
-                <img src="Imatges/strata-logo.svg" width="104">
+                <img src="assets/img/strata-logo.svg" width="104">
                 <div class="footer-links">
                     <a href="#platform">Platform</a>
                     <a href="#workflows_we_run">Workflows</a>
