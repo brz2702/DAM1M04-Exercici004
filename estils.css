@@ -139,9 +139,9 @@ nav {
                 radial-gradient(circle at 50% 70%, #a63ee873, transparent 55%);
     filter: blur(60px);
 }
-
+/* clamp(min, x ,max) a on x és un valor que pot variar en funció de la resolució*/
 .hero-title {
-    font-size: 88px;
+    font-size: clamp(44px, 6.4vw, 88px);
     font-weight: 500;
     margin: 0 0 32px;
 }
@@ -321,11 +321,12 @@ h3 > span {
 #workflows > div {
     display: flex;
     flex-direction: column;
+    text-align: center;
     padding: 80px 0;
     background-color: #f4f1eb;
     border-top: 1px solid #2a2d331a;
     border-bottom: 1px solid #2a2d331a;
-    font-size: 30px;
+    font-size: clamp(22px, 3vw, 30px);
 }
 
 .workflows1 {
@@ -488,7 +489,7 @@ footer {
     font-weight: 500;
 }
 .normal-black {
-    font-size: 44px;
+    font-size: clamp(30px, 3.4vw, 44px);
     font-weight: 500;
     margin: 0 0 0px;
 }
@@ -1057,6 +1058,7 @@ footer {
     }
     .core-card {
         flex-direction: column;
+        align-items: start;
         grid-column: 1/1;
     }
 }
