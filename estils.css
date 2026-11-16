@@ -211,10 +211,10 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
     margin: 0 auto;
     padding: 140px 0;
     width: 100%;
+    background-color: white;
 }
 
 .pre-title {
@@ -485,6 +485,15 @@ footer {
     filter: invert(100%);
 }
 /* Global*/
+.section {
+    position: relative; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    margin: 0 auto; 
+    padding: 140px 0; 
+    width: 100%;
+}
 .small-grey {
     font-size: 12px;
     font-weight: 500;
@@ -519,6 +528,7 @@ footer {
     border-radius: 2px;
     background: linear-gradient(90deg, #82B84F 0%, #2EB872 35%, #2486E8 100%);
 }
+
 /* Workflows section */
 #from_the_field {
     position: relative;
@@ -536,6 +546,7 @@ footer {
         #0e0f13;
     overflow: hidden;
 }
+
 #field-title {
     display: flex;
     align-items: center;
@@ -633,13 +644,6 @@ footer {
 
 /* Workflows section */
 #workflows_we_run {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    padding: 140px 0;
-    width: 100%;
     background: #F8F5EE;
 }
 #workflows_we_run > div {
@@ -740,15 +744,6 @@ footer {
 .workflows-card:hover > * { transform: translateX(6px); }
 
 /* Atlas section */
-#atlas {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    padding: 140px 0;
-    width: 100%;
-}
 #atlas > div {
     display: grid;
     padding-left: 32px;
@@ -852,15 +847,6 @@ footer {
 }
 
 /* Governance section */
-#governance {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    padding: 140px 0;
-    width: 100%;
-}
 #governance > div {
     display: grid;
     padding-left: 32px;
@@ -1004,15 +990,6 @@ footer {
                 linear-gradient(180deg, #F7F4EE 0%, #F0EDE5 100%);
     pointer-events: none;
     z-index: -1; 
-}
-#get_started {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    padding: 140px 0;
-    width: 100%;
 }
 #get_started > div {
     display: grid;
