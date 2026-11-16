@@ -394,3 +394,78 @@ footer {
 .footer-container > img {
     filter: invert(100%);
 }
+
+/* Luego se hace bonito*/
+#get_started::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 70% 60% at 100% 100%, rgba(232, 84, 148, 0.22), transparent 60%), 
+                radial-gradient(ellipse 70% 60% at 0% 0%, rgba(36, 134, 232, 0.18), transparent 60%), 
+                linear-gradient(180deg, #F7F4EE 0%, #F0EDE5 100%);
+    pointer-events: none;
+    z-index: -1; 
+}
+#get_started {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 140px 0;
+    width: 100%;
+}
+#get_started > div {
+    display: grid;
+    padding-left: 32px;
+    padding-right: 32px;
+    width: 65%;
+}
+.small-grey {
+    font-size: 12px;
+    font-weight: 500;
+    color: #6e7480;
+    letter-spacing: 0.14em;
+}
+.big-black {
+    font-size: 72px;
+    font-weight: 500;
+    margin: 0 0 0px;
+}
+#get_started .big-black span {
+    background: linear-gradient(135deg, #82B84F 0%, #2EB872 22%, #2FB7B5 42%, #2486E8 68%, #0B5BD3 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.not-so-small-grey {
+    font-size: 22px;
+    font-weight: 500;
+    color: #6e7480;
+    letter-spacing: 0.14em;
+}
+#started_cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #2a2d331a;
+}
+#started_cards div::before {
+    content: '';
+    display: block;
+    width: 28px;
+    height: 6px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #82B84F 0%, #2EB872 35%, #2486E8 100%)
+}
+#started_cards div{
+    padding: 22px 28px
+}
+#started_cards div p:nth-child(2) {
+    color: #2A2D33;
+}
+#started_cards div:nth-child(2) {
+    border-left: 1px solid #2a2d331a;
+    border-right: 1px solid #2a2d331a;
+}
