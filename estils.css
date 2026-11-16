@@ -70,17 +70,8 @@ nav {
     font-size: 15px;
     font-weight: 500;
     padding: 12px 18px;
-    border-radius: 20px;
+    border-radius: 100px;
     transition: transform .15s, box-shadow .5s ease;
-}
-
-@media (max-width: 880px) {
-    .nav-links {
-        display: none;
-    }
-    .nav-button_and_span > span {
-        display: none;
-    }
 }
 
 .demo:hover {
@@ -135,13 +126,13 @@ nav {
 }
 
 .glow {
-    content: "";
     top: -220px;
     right: -160px;
     position: absolute;
     pointer-events: none;
     width: 720px;
     height: 720px;
+    border-radius: 50%;
     opacity: 0.45;
     background: radial-gradient(circle at 30% 30%, #ffb0518c, transparent 55%),
                 radial-gradient(circle at 70% 40%, #e8549473, transparent 55%),
@@ -156,7 +147,8 @@ nav {
 }
 
 .done {
-    background: linear-gradient( 90deg, #82b84f 0%, #2EB872 10%, #2FB7B5 20% 20% , #2486E8 30%, #0B5BD3 40%, #A63EE8 50%, #B83ACA 60%, #E85494 70%, #F57975 80%, #FC9F5B 90%, #FFB051 95%, #82B84F 100%);
+    background: linear-gradient(90deg, #82b84f 0%, #2EB872 10%, #2FB7B5 20% , #2486E8 30%,#0B5BD3 40%, #A63EE8 50%,
+                #B83ACA 60%, #E85494 70%, #F57975 80%, #FC9F5B 90%, #FFB051 95%, #82B84F 100%);
     background-size: 300% 100%;
     background-clip: text;
     color: transparent;
@@ -225,24 +217,17 @@ nav {
     width: 100%;
 }
 
-.platform-div {
-    display: grid;
-    margin: 0 auto;
-    padding: 0 32px;
-    width: 1200px;
-}
-
-.platform-div > p {
+.pre-title {
     font-size: 12px;
     font-weight: 500;
     color: #6e7480;
     letter-spacing: 0.14em;
 }
 
-.platform-div > h2 {
+.section-title {
     font-size: 44px;
     font-weight: 500;
-    margin: 0 0 42px;
+    margin: 0 0 28px;
 }
 
 .cards {
@@ -304,11 +289,11 @@ h3 {
     color: black;
 }
 
-.cards :nth-child(4) > h3 {
+.core-card > h3 {
     font-size: 22px;
 }
 
-.cards :nth-child(4) > p {
+.core-card > p {
     font-size: 15px;
     margin: 0;
     max-width: 720px;
@@ -357,6 +342,111 @@ p > span {
     font-weight: 500;
 }
 
+#operational_value {
+    padding: 140px 0;
+}
+
+.operational-value {
+    display: flex;
+    margin: 0 0 22px;
+    align-items: center;
+    gap: 10px;
+}
+
+.line {
+    display: inline-block;
+    width: 28px;
+    height: 6px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #82B84F 0%, #2EB872 35%, #2486E8 100%);
+}
+
+.numbers-div {
+    margin: 56px 0 0;
+    padding: 36px 40px;
+    max-width: 980px;
+    border: solid 1px #83C1CC;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 0 1px 0 #ffffff80 inset, 0 24px 60px -28px #14130f2e;
+}
+
+.twin-spans {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 22px;
+    padding: 0 0 18px;
+    font-size: 11px;
+    border-bottom: 1px solid #2a2d331a;
+}
+
+.the-numbers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.a-number::before {
+    content: "";    
+    display: inline-block;
+    width: 18px;
+    height: 4px;
+    left: 4px;
+    top: -4px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #82B84F 0%, #2EB872 35%, #2486E8 100%);
+}
+
+.a-number {
+    padding: 8px 4px;
+}
+
+.pre-number {
+    margin: 0 0 14px;
+    font-size: 11px;
+    font-weight: 500;
+    color: #6e7480;
+    letter-spacing: 0.14em;
+}
+
+.number {
+    margin: 0;
+    font-size: 80px;
+    font-weight: 400;
+    letter-spacing: -0.025em;
+}
+
+.hrs {
+    margin: 0 0 0 6px;
+    font-weight: 300;
+    font-size: 42px;
+    color: #6e7480;
+}
+
+.dollar {
+    font-weight: 300;
+    color: #6e7480;
+}
+
+.post-number {
+    font-size: 13px;
+    margin: 12px 0 0;
+    color: #6e7480;
+}
+
+.post-number > span {
+    display: inline-block;
+    margin: 0 0 0 8px;
+    padding: 2px 8px;
+    border-radius: 100px;
+    border: 1px solid #2486e838;
+    background: linear-gradient(90deg, #2eb8722e, #2486e82e);
+    font-size: 11px;
+    font-weight: 500;
+    color: #1a1c20;
+}
+
 footer {
     display: flex;
     padding: 40px 0 60px;
@@ -394,7 +484,6 @@ footer {
 .footer-container > img {
     filter: invert(100%);
 }
-
 /* Global*/
 .small-grey {
     font-size: 12px;
