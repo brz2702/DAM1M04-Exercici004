@@ -484,6 +484,7 @@ footer {
 .footer-container > img {
     filter: invert(100%);
 }
+
 /* Global*/
 .section {
     position: relative; 
@@ -493,6 +494,12 @@ footer {
     margin: 0 auto; 
     padding: 140px 0; 
     width: 100%;
+}
+.section > div{
+    display: grid;
+    padding-left: 32px;
+    padding-right: 32px;
+    width: 65%;
 }
 .small-grey {
     font-size: 12px;
@@ -744,12 +751,6 @@ footer {
 .workflows-card:hover > * { transform: translateX(6px); }
 
 /* Atlas section */
-#atlas > div {
-    display: grid;
-    padding-left: 32px;
-    padding-right: 32px;
-    width: 65%;
-}
 #atlas-title {
     display: flex;
     align-items: center;
@@ -847,12 +848,6 @@ footer {
 }
 
 /* Governance section */
-#governance > div {
-    display: grid;
-    padding-left: 32px;
-    padding-right: 32px;
-    width: 65%;
-}
 #governance-title {
     display: flex;
     align-items: center;
@@ -990,12 +985,6 @@ footer {
                 linear-gradient(180deg, #F7F4EE 0%, #F0EDE5 100%);
     pointer-events: none;
     z-index: -1; 
-}
-#get_started > div {
-    display: grid;
-    padding-left: 32px;
-    padding-right: 32px;
-    width: 65%;
 }
 #get_started .big-black span {
     background: linear-gradient(135deg, #82B84F 0%, #2EB872 22%, #2FB7B5 42%, #2486E8 68%, #0B5BD3 100%);
