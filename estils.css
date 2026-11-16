@@ -74,15 +74,6 @@ nav {
     transition: transform .15s, box-shadow .5s ease;
 }
 
-@media (max-width: 880px) {
-    .nav-links {
-        display: none;
-    }
-    .nav-button_and_span > span {
-        display: none;
-    }
-}
-
 .demo:hover {
     transform: translateY(-2px);
     box-shadow: 0 10px 25px -5px #00000033;
@@ -135,13 +126,13 @@ nav {
 }
 
 .glow {
-    content: "";
     top: -220px;
     right: -160px;
     position: absolute;
     pointer-events: none;
     width: 720px;
     height: 720px;
+    border-radius: 50%;
     opacity: 0.45;
     background: radial-gradient(circle at 30% 30%, #ffb0518c, transparent 55%),
                 radial-gradient(circle at 70% 40%, #e8549473, transparent 55%),
@@ -156,7 +147,8 @@ nav {
 }
 
 .done {
-    background: linear-gradient( 90deg, #82b84f 0%, #2EB872 10%, #2FB7B5 20% 20% , #2486E8 30%, #0B5BD3 40%, #A63EE8 50%, #B83ACA 60%, #E85494 70%, #F57975 80%, #FC9F5B 90%, #FFB051 95%, #82B84F 100%);
+    background: linear-gradient(90deg, #82b84f 0%, #2EB872 10%, #2FB7B5 20% , #2486E8 30%,#0B5BD3 40%, #A63EE8 50%,
+                #B83ACA 60%, #E85494 70%, #F57975 80%, #FC9F5B 90%, #FFB051 95%, #82B84F 100%);
     background-size: 300% 100%;
     background-clip: text;
     color: transparent;
@@ -304,11 +296,11 @@ h3 {
     color: black;
 }
 
-.cards :nth-child(4) > h3 {
+.core-card > h3 {
     font-size: 22px;
 }
 
-.cards :nth-child(4) > p {
+.core-card > p {
     font-size: 15px;
     margin: 0;
     max-width: 720px;
@@ -393,4 +385,21 @@ footer {
 
 .footer-container > img {
     filter: invert(100%);
+}
+
+@media (max-width: 880px) {
+    .nav-links {
+        display: none;
+    }
+    .nav-button_and_span > span {
+        display: none;
+    }
+    .cards {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .core-card {
+        flex-direction: column;
+        grid-column: 1/1;
+    }
 }
