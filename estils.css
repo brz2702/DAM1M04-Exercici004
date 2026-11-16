@@ -70,7 +70,7 @@ nav {
     font-size: 15px;
     font-weight: 500;
     padding: 12px 18px;
-    border-radius: 20px;
+    border-radius: 100px;
     transition: transform .15s, box-shadow .5s ease;
 }
 
@@ -217,24 +217,17 @@ nav {
     width: 100%;
 }
 
-.platform-div {
-    display: grid;
-    margin: 0 auto;
-    padding: 0 32px;
-    width: 1200px;
-}
-
-.platform-div > p {
+.pre-title {
     font-size: 12px;
     font-weight: 500;
     color: #6e7480;
     letter-spacing: 0.14em;
 }
 
-.platform-div > h2 {
+.section-title {
     font-size: 44px;
     font-weight: 500;
-    margin: 0 0 42px;
+    margin: 0 0 28px;
 }
 
 .cards {
@@ -349,6 +342,111 @@ p > span {
     font-weight: 500;
 }
 
+#operational_value {
+    padding: 140px 0;
+}
+
+.operational-value {
+    display: flex;
+    margin: 0 0 22px;
+    align-items: center;
+    gap: 10px;
+}
+
+.line {
+    display: inline-block;
+    width: 28px;
+    height: 6px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #82B84F 0%, #2EB872 35%, #2486E8 100%);
+}
+
+.numbers-div {
+    margin: 56px 0 0;
+    padding: 36px 40px;
+    max-width: 980px;
+    border: solid 1px #83C1CC;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 0 1px 0 #ffffff80 inset, 0 24px 60px -28px #14130f2e;
+}
+
+.twin-spans {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 22px;
+    padding: 0 0 18px;
+    font-size: 11px;
+    border-bottom: 1px solid #2a2d331a;
+}
+
+.the-numbers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.a-number::before {
+    content: "";    
+    display: inline-block;
+    width: 18px;
+    height: 4px;
+    left: 4px;
+    top: -4px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #82B84F 0%, #2EB872 35%, #2486E8 100%);
+}
+
+.a-number {
+    padding: 8px 4px;
+}
+
+.pre-number {
+    margin: 0 0 14px;
+    font-size: 11px;
+    font-weight: 500;
+    color: #6e7480;
+    letter-spacing: 0.14em;
+}
+
+.number {
+    margin: 0;
+    font-size: 80px;
+    font-weight: 400;
+    letter-spacing: -0.025em;
+}
+
+.hrs {
+    margin: 0 0 0 6px;
+    font-weight: 300;
+    font-size: 42px;
+    color: #6e7480;
+}
+
+.dollar {
+    font-weight: 300;
+    color: #6e7480;
+}
+
+.post-number {
+    font-size: 13px;
+    margin: 12px 0 0;
+    color: #6e7480;
+}
+
+.post-number > span {
+    display: inline-block;
+    margin: 0 0 0 8px;
+    padding: 2px 8px;
+    border-radius: 100px;
+    border: 1px solid #2486e838;
+    background: linear-gradient(90deg, #2eb8722e, #2486e82e);
+    font-size: 11px;
+    font-weight: 500;
+    color: #1a1c20;
+}
+
 footer {
     display: flex;
     padding: 40px 0 60px;
@@ -396,7 +494,7 @@ footer {
     }
     .cards {
         grid-template-columns: 1fr;
-        width: 100%;
+        min-height: 260px;
     }
     .core-card {
         flex-direction: column;
