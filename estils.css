@@ -217,16 +217,8 @@ nav {
     background-color: white;
 }
 
-.pre-title {
-    font-size: 12px;
-    font-weight: 500;
-    color: #6e7480;
-    letter-spacing: 0.14em;
-}
 
-.section-title {
-    font-size: 44px;
-    font-weight: 500;
+#platform h2 {
     margin: 0 0 28px;
 }
 
@@ -347,10 +339,7 @@ p > span {
 }
 
 .operational-value {
-    display: flex;
     margin: 0 0 22px;
-    align-items: center;
-    gap: 10px;
 }
 
 .line {
@@ -535,6 +524,11 @@ footer {
     border-radius: 2px;
     background: linear-gradient(90deg, #82B84F 0%, #2EB872 35%, #2486E8 100%);
 }
+.title-row{
+    display: flex; 
+    align-items: center; 
+    gap: 10px;
+}
 
 /* Workflows section */
 #from_the_field {
@@ -555,9 +549,6 @@ footer {
 }
 
 #field-title {
-    display: flex;
-    align-items: center;
-    gap: 10px;
     margin-bottom: 28px;
 }
 #field-title .small-grey {
@@ -751,11 +742,6 @@ footer {
 .workflows-card:hover > * { transform: translateX(6px); }
 
 /* Atlas section */
-#atlas-title {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
 #atlas-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -848,11 +834,6 @@ footer {
 }
 
 /* Governance section */
-#governance-title {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
 #governance-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -868,14 +849,14 @@ footer {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px -5px #00000033;
 }
-#governance-card::before{
+.governance-card::before{
     content: '';
     position: absolute;
     inset: 0 0 auto 0;
     height: 3px;
     background: #19A1EF;
 }
-#governance-card {
+.governance-card {
     position: relative;
     padding: 36px;
     flex-direction: column;
@@ -883,12 +864,12 @@ footer {
     border: 1px solid #2a2d331a;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0));
 }
-#governance-card h3 {
+.governance-card h3 {
     display: flex;
     align-items: center;
     gap: 12px;
 }
-#governance-card h3::before {
+.governance-card h3::before {
     content: '';
     width: 14px;
     height: 3px;
@@ -896,22 +877,22 @@ footer {
     background: #19A1EF;
     flex: 0 0 14px;
 }
-#governance-card:nth-child(2)::before {
+.governance-card:nth-child(2)::before {
     background: #52B272;
 }
-#governance-card:nth-child(2) h3::before {
+.governance-card:nth-child(2) h3::before {
     background: #52B272;
 }
-#governance-card:nth-child(3)::before {
+.governance-card:nth-child(3)::before {
     background: #A22EE5;
 }
-#governance-card:nth-child(3) h3::before {
+.governance-card:nth-child(3) h3::before {
     background: #A22EE5;
 }
-#governance-card:nth-child(4)::before {
+.governance-card:nth-child(4)::before {
     background: #F5C800;
 }
-#governance-card:nth-child(4) h3::before {
+.governance-card:nth-child(4) h3::before {
     background: #F5C800;
 }
 .lines-list {
