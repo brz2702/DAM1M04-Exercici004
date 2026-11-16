@@ -420,6 +420,7 @@ footer {
     font-size: 72px;
     font-weight: 500;
     margin: 0 0 0px;
+    max-width: 900px;
 }
 .marker {
     content: '';
@@ -429,6 +430,115 @@ footer {
     border-radius: 2px;
     background: linear-gradient(90deg, #82B84F 0%, #2EB872 35%, #2486E8 100%);
 }
+
+
+/* Workflows section */
+#workflows_we_run {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 140px 0;
+    width: 100%;
+    background: #F8F5EE;
+}
+#workflows_we_run > div {
+    display: grid;
+    padding-left: 32px;
+    padding-right: 32px;
+    width: 65%;
+}
+#workflows_we_run p {
+    max-width: 720px;
+}
+#workflows-cards {
+    display: flex;
+    flex-direction: column;
+}
+.workflows-card{
+    position: relative;
+    display: grid;
+    grid-template-columns: 240px 1fr auto;
+    align-items: start;
+    padding: 38px 0 36px;
+    border-top: 1px solid rgba(42, 45, 51, 0.10);
+    border-bottom: 1px solid rgba(42, 45, 51, 0.10);
+}
+.workflows-card > div:not(.workflows-arrow) {
+    grid-row: 1 / span 2;
+    grid-column: 1;
+    padding-top: 4px;
+}
+.workflows-card h3 {
+    margin: 0 0 10px;
+    font-size: 22px;
+    font-weight: 400;
+    color: #2a2d33;
+}
+.workflows-card p {
+    margin: 0;
+    font-size: 16px;
+    max-width: 640px;
+    line-height: 1.6;
+    color: #6E7480;
+}
+.workflows-card > div span {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 10px;
+    border: 1px solid #F0C894;
+    border-radius: 999px;
+    background: #FAE4C8;
+    color: #C26A22;
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 11px;
+    font-weight: 500;
+}
+.workflows-sub {
+    padding-left: 36px;
+    background: linear-gradient(to right, color-mix(in srgb, #2A2D33 3%, transparent), transparent 40%);
+}
+.workflows-sub > div span{
+    color: #6E7480;
+    background: rgba(238, 155, 51, 0.14);
+}
+.workflows-card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    background: linear-gradient(135deg, #82B84F 0%, #2EB872 22%, #2FB7B5 42%, #2486E8 68%, #0B5BD3 100%);
+    transition: width .2s ease;
+    border-radius: 2px;
+}
+.workflows-card > .workflows-arrow {
+    grid-row: 1 / span 2;
+    grid-column: 3;
+    align-self: center;
+    justify-self: end;
+    padding-right: 8px;
+    font-size: 20px;
+    color: #6E7480;
+    opacity: 0;
+    transform: translateX(-6px);
+    transition: opacity .2s, transform .2s;
+}
+.workflows-card:hover > .workflows-arrow {
+    opacity: 1;
+    transform: translateX(0);
+}
+.workflows-card:hover::before { 
+    width: 3px; 
+}
+.workflows-card:hover::after {
+    opacity: 1;
+    transform: translate(0, -50%);
+}
+.workflows-card > * { transition: transform .2s ease; }
+.workflows-card:hover > * { transform: translateX(6px); }
 
 /* Atlas section */
 #atlas {
@@ -474,6 +584,7 @@ footer {
 }
 #lone-text{
     font-size: 19px;
+    max-width: 720px;
     margin: 0 0 56px;
     font-weight: 400;
     line-height: 1.5;
